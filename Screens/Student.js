@@ -24,25 +24,17 @@ const Student = () => {
     try{
       const response = signInWithEmailAndPassword(auth, emailId, password);
       navigation.navigate('Map');
-      //const login = onAuthStateChanged(auth, (emailId) => {
-        //if(emailId){
-         // navigation.navigate('Map');
-        //}
-      //});
-      //login();
+      
     }
     catch(err) {
       console.log(err);
     };
-    // Navigate back to the Login screen
     
 
   };
 
   const handleSave = () => {
     
-    // Perform any other necessary logic, and navigate to the next screen
-    // For now, let's just navigate to a placeholder screen 'Login'
     navigation.navigate('Login', {
       emailid: emailId,
       password: password,

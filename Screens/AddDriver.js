@@ -14,8 +14,7 @@ const AddDriver = () => {
 
     const handleAdddriver = async () => {
         try{
-            const userDocRef = doc(firestore, 'driver', driverId);
-            
+            const userDocRef = doc(firestore, 'driver', driverId);       
             await setDoc(userDocRef, {
             DriverName: driverName,
             DriverId: driverId,
@@ -64,8 +63,7 @@ const AddDriver = () => {
                 value={RouteNo}
                 onChangeText={(text) => setRouteNo(text)}
             />
-
-
+                    
             <Pressable style={styles.addButton} onPress={handleAdddriver}>
                 <Text style={styles.buttonText}>Add driver</Text>
             </Pressable>

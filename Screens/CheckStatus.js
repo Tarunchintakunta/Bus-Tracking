@@ -3,7 +3,6 @@ import { View, Text, Pressable, StyleSheet } from 'react-native';
 
 const CheckStatus = ({ navigation }) => {
   const handleCheckBusStatus = () => {
-    // Add logic to navigate to the bus status page
   };
 
   const handleCheckRoutes = () => {

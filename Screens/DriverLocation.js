@@ -30,7 +30,6 @@ const DriverLocation = () => {
           },
         );
         if (PermissionsAndroid.RESULTS.GRANTED === granted) {
-          
             getLocationAsync();
         } else {
           setLocationStatus('Permission Denied');
@@ -39,7 +38,6 @@ const DriverLocation = () => {
     };
 
     requestLocationPermission();
-
     return () => {
       // Cleanup code, if needed
     };
@@ -118,7 +116,7 @@ const styles = StyleSheet.create({
   successMessage: {
     fontSize: 18,
     marginVertical: 10,
-    color: 'green', // Change color if needed
+    color: 'green',
     fontWeight: 'bold',
   },
 });

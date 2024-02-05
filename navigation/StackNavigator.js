@@ -1,8 +1,6 @@
 import { Text, View } from 'react-native';
 import React from 'react';
-import { NavigationContainer, StackRouter } from '@react-navigation/native';
 import First from '../Screens/First';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Lang from '../Screens/Lang';
 import Login from '../Screens/Login';
 import Telugu from '../Screens/Telugu';
@@ -16,7 +14,8 @@ import Map from '../Screens/Map';
 import AddStudent from '../Screens/AddStudent';
 import AddDriver from '../Screens/AddDriver';
 import DriverLocation from '../Screens/DriverLocation';
-
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NavigationContainer, StackRouter } from '@react-navigation/native';
 
 const StackNavigator = () => {
     const Stack = createNativeStackNavigator();

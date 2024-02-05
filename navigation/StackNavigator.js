@@ -13,7 +13,6 @@ import Driver from '../Screens/Driver';
 import AdminLogin from '../Screens/Adminlogin';
 import CheckStatus from '../Screens/CheckStatus';
 import Map from '../Screens/Map';
-//import DriverProfile from '../Screens/DriverProfile';
 import AddStudent from '../Screens/AddStudent';
 import AddDriver from '../Screens/AddDriver';
 import DriverLocation from '../Screens/DriverLocation';
@@ -37,10 +36,7 @@ const StackNavigator = () => {
                 <Stack.Screen name='Map' component={Map} options={{headerShown: false}}/>
                 <Stack.Screen name='AddStudent' component={AddStudent} options={{headerShown: false}}/>
                 <Stack.Screen name='AddDriver' component={AddDriver} options={{headerShown: false}}/>
-                <Stack.Screen name='DriverLocation' component={DriverLocation} options={{headerShown: false}}/>
-                
-     
-                
+                <Stack.Screen name='DriverLocation' component={DriverLocation} options={{headerShown: false}}/>            
                 
 
             </Stack.Navigator>
